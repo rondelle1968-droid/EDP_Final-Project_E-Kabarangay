@@ -1,0 +1,135 @@
+:root {
+    --primary-blue: #1545a2;
+    --action-yellow: #f1c40f;
+    --bg-white: #ffffff;
+    --text-blue: #1545a2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-blue);
+}
+
+.change-id-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-header {
+    padding: 30px 50px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.page-logo {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+}
+
+.logo-title h1 {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.upload-card {
+    background: var(--bg-white);
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.upload-label {
+    color: var(--text-blue);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    border: 2px dashed #b1b1b1;
+    border-radius: 10px;
+    padding: 50px 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.drop-zone:hover {
+    background-color: #f9f9f9;
+    border-color: var(--primary-blue);
+}
+
+.upload-icon {
+    font-size: 2.5rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.support-text {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 30px;
+    background-color: #f4c414;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.footer-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-link {
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

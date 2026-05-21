@@ -1,0 +1,189 @@
+:root {
+    --primary-blue: #1547A1;
+    --dark-blue: #0D3478;
+    --border-blue: #1547A1;
+    --border-red: #E53E3E;
+    --border-yellow: #D69E2E;
+    --text-blue: #1547A1;
+    --success-green: #48BB78;
+}
+
+body {
+    background-color: var(--primary-blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.logo-header img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.registration-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 3px solid var(--dark-blue);
+}
+
+.section-title {
+    color: var(--text-blue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.section-box {
+    border: 2px dashed;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.address-section { border-color: var(--border-blue); }
+.maternal-section { border-color: var(--border-red); }
+.household-section { border-color: var(--border-yellow); }
+
+.section-label {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: white;
+    padding: 0 10px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: var(--text-blue);
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CBD5E0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.error-msg {
+    color: var(--border-red);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pill-group input[type="radio"] {
+    display: none;
+}
+
+.pill-group label {
+    border: 1.5px solid var(--text-blue);
+    padding: 8px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--text-blue);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.pill-group input[type="radio"]:checked + label {
+    background: var(--text-blue);
+    color: white;
+}
+
+.sub-label {
+    display: block;
+    text-align: right;
+    font-size: 0.7rem;
+    color: #718096;
+    font-style: italic;
+}
+
+.footer-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.btn-back { 
+    background: #E2E8F0; 
+    color: #4A5568; 
+}
+
+.btn-save { 
+    background: var(--dark-blue); 
+    color: white; 
+}
+
+.btn-save:hover {
+    background: #0a2a60;
+}
+
+.error-message {
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.inline-row {
+    margin: 15px 0;
+}
+
+.input-row {
+    margin-bottom: 15px;
+}
+
+.input-row label {
+    display: block;
+    color: var(--text-blue);
+    font-weight: 600;
+    margin-bottom: 8px;
+}

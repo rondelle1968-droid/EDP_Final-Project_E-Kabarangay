@@ -1,0 +1,98 @@
+.validation-container {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section-header {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.validation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.validation-card {
+    background: #eef2f7;
+    border-radius: 12px;
+    padding: 15px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.id-container-2x2 {
+
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ccc;
+}
+
+.id-container-2x2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.full-name {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.resident-summary p {
+    margin: 3px 0;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.card-actions {
+    margin-top: 15px;
+}
+
+.btn-approve, .btn-reject {
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    flex: 2;
+    cursor: pointer;
+}
+
+.btn-approve {
+    background: #32cd32;
+}
+
+.btn-reject {
+    background: #d32f2f;
+}
+
+.btn-view {
+    border: 1.5px solid #1545a2;
+    background: white;
+    color: #1545a2;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex: 0.6;
+}
